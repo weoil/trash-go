@@ -17,7 +17,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 const API = {
-  version: '0.0.1',
+  version: '1.0.3',
   install
 }
 // module.exports.default = module.exports = API
