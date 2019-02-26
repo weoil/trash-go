@@ -1,7 +1,9 @@
-import IPdf from '../src/components/pdf/i-pdf.vue'
+import Pdf from './components/pdf/i-pdf.vue'
 const Components = {
-  IPdf: IPdf
+  IPdf: Pdf
 }
+
+export const IPdf = Pdf
 const install = function(Vue, opts = {}) {
   if (install.installed) {
     return
@@ -18,4 +20,5 @@ const API = {
   version: '0.0.1',
   install
 }
-module.exports.default = module.exports = API
+// module.exports.default = module.exports = API
+export default API

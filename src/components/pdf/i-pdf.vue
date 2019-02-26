@@ -77,7 +77,7 @@ export default {
         CMAP_URL: '/static/cmaps/',
         CMAP_PACKED: true,
         workerSrc: 'https://cdn.bootcss.com/pdf.js/2.0.943/pdf.worker.min.js',
-        threshold: 1000 // 上下超出部分
+        threshold: 1500 // 上下超出部分
       },
       diff: {
         width: 0,
@@ -315,7 +315,7 @@ export default {
         const value = options[key]
         switch (key) {
           case 'workerSrc':
-            PDFLib.GlobalWorkerOptions = value
+            PDFLib.GlobalWorkerOptions.workerSrc = value
             break
           default:
             break
